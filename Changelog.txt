@@ -1,0 +1,107 @@
+====================
+     02-03-2021
+====================
+
+
+   * external/hosts
+6f15c4a8 Release 3.3.10
+423cda56 Updates from yoyo.org, URLHaus, digitalside.it, KADhosts, HostsVN, and Badd-Boyz.
+
+   * vendor/aicp
+01d9adf Merge changes from topics "custom-clang-proton", "r-hardcoded-clang" into r11.1
+65fdff0 qcom: Add bengal platform
+
+====================
+     02-02-2021
+====================
+
+
+   * external/hosts
+26704e1b Issue #1522 add eu1-spiky.wzrkt.com.
+
+====================
+     02-01-2021
+====================
+
+
+   * external/hosts
+17915dc9 Release 3.3.9
+840ee7d5 Updates from URLHaus, shady-hosts, digitalside.it, KADhosts, hostsVN, Badd-Boyz, and add.Risk.
+
+   * system/core
+acd76bd96 fastbootd: hacks for legacy
+5dd332376 fastbootd: usb: fallback to v1 descriptors
+fc094578d adb_root: Make encryption action an argument to mkdir
+
+   * vendor/aicp
+ef12bdc kernel: Add KERNEL_SUPPORTS_LLVM_TOOLS to permit building with LLVM Build Tools
+5cd9c5d kernel: Cleanup some of the clang logic
+fff0dce init: Make encryption action an argument to mkdir
+
+====================
+     01-31-2021
+====================
+
+
+   * packages/apps/ThemePicker
+65bca5f ThemePicker: Make naming page look the same as the other ones
+
+   * prebuilts/clang/host/linux-x86_custom
+f37390bf clang-custom: update to 12.0.2
+
+====================
+     01-30-2021
+====================
+
+
+   * build/soong
+b2eef172 Add CCACHE_COMPRESS to allowed environment variables
+
+   * external/hosts
+6bf1f000 Merge pull request #1515 from nalekberov/master
+
+====================
+     01-29-2021
+====================
+
+
+   * external/hosts
+725f977d Remove main domain adviad.com
+
+   * packages/apps/Gallery2
+4e96ca6f3 Gallery2: dark theme
+
+   * packages/apps/WallpaperPicker2
+e4bd462 WallpaperPicker2: Increase height of bottom area
+6cc4ed8 WallpaperPicker2: Match backgrounds to device theme
+
+====================
+     01-28-2021
+====================
+
+
+   * external/hosts
+54be8d0b Add subdomains for adviad.com
+
+====================
+     01-27-2021
+====================
+
+
+   * external/hosts
+5a1b192f Add adviad.com
+
+====================
+     01-26-2021
+====================
+
+
+====================
+     01-25-2021
+====================
+
+
+   * external/hosts
+62d6b8c6 Release 3.3.8
+3c50aed4 Updates from URLHaus, digitalside.it, and KADHosts.
+
