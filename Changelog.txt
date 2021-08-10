@@ -1,107 +1,116 @@
 ====================
-     02-03-2021
+     08-08-2021
 ====================
 
 
-   * external/hosts
-6f15c4a8 Release 3.3.10
-423cda56 Updates from yoyo.org, URLHaus, digitalside.it, KADhosts, HostsVN, and Badd-Boyz.
+   * build/make
+066254ff4 Merge tag 'android-11.0.0_r40' into r11.1
+
+   * frameworks/base
+d0ab7dc736a Remove call to expand QS panel while pressing the Airplane QS tile
+5b512ab4202 fw_base: merge tag 'android-11.0.0_r40' into r11.1
+
+   * packages/apps/Settings
+49ee950c11 Merge tag 'android-11.0.0_r40' into r11.1
+
+   * platform_manifest
+dc0f7bb Merge "manifest: merge tag 'android-11.0.0_r40' into r11.1" into r11.1
+
+   * prebuilts/gcc/linux-x86/aarch64/arm64-gcc10.3.1
+086c938 Import ARM64 GCC 20210808
+
+====================
+     08-07-2021
+====================
+
+
+====================
+     08-06-2021
+====================
+
+
+   * frameworks/base
+3f5db1498d6 SystemUI: show weatherView during pulsing
+
+====================
+     08-05-2021
+====================
+
+
+   * prebuilts/gcc/linux-x86/aarch64/arm64-gcc10.3.1
+38a5a6d Import ARM64 GCC 20210805
 
    * vendor/aicp
-01d9adf Merge changes from topics "custom-clang-proton", "r-hardcoded-clang" into r11.1
-65fdff0 qcom: Add bengal platform
+5097a00 lineage: Don't enforce inclusion of common compatibility matrix
+921530a vendor_aicp: Add framework compatibility matrix for Lineage HALs.
 
 ====================
-     02-02-2021
-====================
-
-
-   * external/hosts
-26704e1b Issue #1522 add eu1-spiky.wzrkt.com.
-
-====================
-     02-01-2021
+     08-04-2021
 ====================
 
 
-   * external/hosts
-17915dc9 Release 3.3.9
-840ee7d5 Updates from URLHaus, shady-hosts, digitalside.it, KADhosts, hostsVN, Badd-Boyz, and add.Risk.
+   * frameworks/opt/telephony
+e3d255b77 Merge tag 'android-11.0.0_r40' into staging/lineage-18.1_merge-android-11.0.0_r40
 
-   * system/core
-acd76bd96 fastbootd: hacks for legacy
-5dd332376 fastbootd: usb: fallback to v1 descriptors
-fc094578d adb_root: Make encryption action an argument to mkdir
+   * packages/services/Telephony
+e99230b00 Add intent-filter priority for CONFIGURE_VOICEMAIL intent.
 
-   * vendor/aicp
-ef12bdc kernel: Add KERNEL_SUPPORTS_LLVM_TOOLS to permit building with LLVM Build Tools
-5cd9c5d kernel: Cleanup some of the clang logic
-fff0dce init: Make encryption action an argument to mkdir
+   * platform_manifest
+afa30c1 manifest: merge tag 'android-11.0.0_r40' into r11.1
+4983fce manifest: Track system HIDL tools.
 
 ====================
-     01-31-2021
-====================
-
-
-   * packages/apps/ThemePicker
-65bca5f ThemePicker: Make naming page look the same as the other ones
-
-   * prebuilts/clang/host/linux-x86_custom
-f37390bf clang-custom: update to 12.0.2
-
-====================
-     01-30-2021
-====================
-
-
-   * build/soong
-b2eef172 Add CCACHE_COMPRESS to allowed environment variables
-
-   * external/hosts
-6bf1f000 Merge pull request #1515 from nalekberov/master
-
-====================
-     01-29-2021
+     08-03-2021
 ====================
 
 
    * external/hosts
-725f977d Remove main domain adviad.com
-
-   * packages/apps/Gallery2
-4e96ca6f3 Gallery2: dark theme
-
-   * packages/apps/WallpaperPicker2
-e4bd462 WallpaperPicker2: Increase height of bottom area
-6cc4ed8 WallpaperPicker2: Match backgrounds to device theme
+f929591b Release 3.8.5
+20ce5dab Updates from yoyo.org, ULRHaus, someonewhocares.org, shady-hosts, digitalside.it, KADhosts, hostsVN, Adguard, and AdAway.
+392fddc9 Issue #1722: fix — add LemonDuck and LemonCat domains.
 
 ====================
-     01-28-2021
+     08-02-2021
 ====================
 
 
-   * external/hosts
-54be8d0b Add subdomains for adviad.com
+   * system/tools/hidl
+44f4d6a8 prebuilt_hidl_interfaces
+cfffcdce hidl_metadata_test
 
 ====================
-     01-27-2021
+     08-01-2021
 ====================
 
 
-   * external/hosts
-5a1b192f Add adviad.com
+   * prebuilts/gcc/linux-x86/aarch64/arm64-gcc10.3.1
+8b8404f Import ARM64 GCC 20210801
 
 ====================
-     01-26-2021
+     07-31-2021
 ====================
 
 
 ====================
-     01-25-2021
+     07-30-2021
 ====================
 
 
    * external/hosts
-62d6b8c6 Release 3.3.8
-3c50aed4 Updates from URLHaus, digitalside.it, and KADHosts.
+9d650854 Fix comment in my ad-hoc hosts list.
+16f297b9 Gentle edits to the readme template.
+47a4b233 Release 3.8.4
+9435305e Updates from yoyo.org, URLHaus, digitalside.it, orca.pet, KADhosts, hostsVN, and Adaway.
+22cb856d Issue #1721: add new domains from Bitdefender.
+
+   * frameworks/base
+6173a853a95 Merge "Revert "InputManagerService: Flag when an injected event is a real input"" into r11.1
+b8ee696dd67 Revert "InputManagerService: Flag when an injected event is a real input"
+be66a8c61b6 Revert "fixup! InputManagerService: Flag when an injected event is a real input"
+
+   * frameworks/native
+0e7afc827 Revert "Use the original device ID when the injected event is unchanged"
+
+   * prebuilts/gcc/linux-x86/aarch64/arm64-gcc10.3.1
+92e5135 Import ARM64 GCC 20210729
 
