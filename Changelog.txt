@@ -1,116 +1,384 @@
 ====================
+     08-09-2021
+====================
+
+* frameworks/base
+29c0e04  Revert "fixup! Add Android S Clocks"  [Ayan Mukherjee]
+a5e8c9a  ThemesUtils: Add function to return clockfaces  [SagarMakhar]
+e76f46c  ThemeUtils: Allow getting overlays for specified pkg  [SagarMakhar]
+e340d11  Import ThemeUtils  [SagarMakhar]
+63bab34  SystemUI: Add missing imports  [Ayan Mukherjee]
+6606845  FODCircleView: Ignore assistant UI when showing bouncer  [Ido Ben-Hur]
+fbbcade  FODCircleView: Don't show on top of assistant UI  [jhonboy121]
+dc312dd  SystemUI: ditch unnecessary scaling in media notification background  [jhonboy121]
+cc9cdda  base: Match NFC statusbar icon with QS one  [Pranav Santhosh]
+d2c6531  Improvements to QS player background artwork  [spkal01]
+2fb0d28  base: Replace media notification background with artwork [1/2]  [TikkiTikki]
+77e3046  AppLock: Fix biometric prompt disapearing if app launched from resolver  [jhenrique09]
+5a9fb81  AppLock: Don't trigger if starting new intent of current running package  [jhenrique09]
+f1b99e1  Revert "AppLock: Don't trigger if starting new intent of current running package"  [Ayan Mukherjee]
+1944ff99  SystemUI: make qs weather page follow system font setting  [maxwen]
+fc43feb  base: Add permissions for OmniJaws  [Pranav Vashi]
+b40de73  Grant OmniJaws always location permissions  [DennySPb]
+c711459  base: weather panel improvements  [George Zacharia]
+4b28d3d  [2/2] OmniJaws: band-aid the vector tinting situation  [El Dainosor]
+3a9f787  core: move OmniJaws client to its new home  [Ali B]
+01768d9  Lockscreen Weather: Improvements  [Pranav Vashi]
+c855ba4  base: SystemUI: make keyguard weather icon smaller  [Ali B]
+28c05bd  WeatherTile: Send weather info to a Secondary Label  [El Dainosor]
+3c3d3ea  SystemUI: weather qs tile keep long press to show details  [maxwen]
+0f96f79  base: SystemUI: fix keyguard weather color update  [maxwen]
+b5ac137  SystemUI: fix LS weather view merge  [Marko Man]
+5861432  base: SystemUI: add keyguard weather style (1/2)  [Ali B]
+766c1f4  [1/3] base: SystemUI: keyguard weather view  [maxwen]
+36ca535  SystemUI: add weather to keyguardSlice  [Ali B]
+499c57e  [1/3] base: add back weather parts  [maxwen]
+e161e1b  Revert "SystemUI: Implement Smart space from redfin 11"  [Ayan Mukherjee]
+8f1c9b7  AndroidSClock: fix missing view without visible notifications  [rohan]
+
+
+* manifest
+8cc96f7  manifest: Track OmniJaws  [Ayan Mukherjee]
+
+
+* vendor/bliss
+513259c  vendor: Build Omnijaws  [Ayan Mukherjee]
+
+====================
      08-08-2021
 ====================
 
+* build/make
+a9c8bd0  build: allow device to override *caugh**caugh* prop  [Marko Man]
 
-   * build/make
-066254ff4 Merge tag 'android-11.0.0_r40' into r11.1
 
-   * frameworks/base
-d0ab7dc736a Remove call to expand QS panel while pressing the Airplane QS tile
-5b512ab4202 fw_base: merge tag 'android-11.0.0_r40' into r11.1
+* prebuilts/gcc/linux-x86/aarch64/arm64-gcc10.3.1
+086c938  Import ARM64 GCC 20210808  [Reinazhard]
 
-   * packages/apps/Settings
-49ee950c11 Merge tag 'android-11.0.0_r40' into r11.1
 
-   * platform_manifest
-dc0f7bb Merge "manifest: merge tag 'android-11.0.0_r40' into r11.1" into r11.1
-
-   * prebuilts/gcc/linux-x86/aarch64/arm64-gcc10.3.1
-086c938 Import ARM64 GCC 20210808
+* prebuilts/gcc/linux-x86/aarch64/arm64-gcc11
+49ab4cd  Import ARM64 GCC 20210808  [Reinazhard]
 
 ====================
      08-07-2021
 ====================
 
+* vendor/bliss
+a77aad3  Merge "vendor/bliss: Add AboutBliss" into r  [Jack]
+bddf99f  vendor/bliss: Add AboutBliss  [Jackeagle]
+25a4ca4  vendor: soong: add target_needs_client_info  [Marko Man]
+6f86afb  Revert vendor: soong: add target_needs_client_info  [srgrusso]
 
 ====================
      08-06-2021
 ====================
 
+* packages/apps/Blissify
+5b8d131  Blissify: Remove AOSP Accent Color selection  [Jackeagle]
 
-   * frameworks/base
-3f5db1498d6 SystemUI: show weatherView during pulsing
+
+* packages/apps/Settings
+2b8f560  Merge "AmbientDisplay: Add custom pref for devices with custom doze  packages" into r  [Jack]
 
 ====================
      08-05-2021
 ====================
 
+* device/lineage/sepolicy
+19d4f91  sepolicy: Add rules for FPS info  [Anushek Prasal]
+b38bbaf  common: Label IAntiFlicker live display service  [Arian]
 
-   * prebuilts/gcc/linux-x86/aarch64/arm64-gcc10.3.1
-38a5a6d Import ARM64 GCC 20210805
 
-   * vendor/aicp
-5097a00 lineage: Don't enforce inclusion of common compatibility matrix
-921530a vendor_aicp: Add framework compatibility matrix for Lineage HALs.
+* frameworks/base
+484778dd  Revert "SystemUI: Sync navigation bar icons with OOS."  [Jackeagle]
+b18459d  Android S Clock: Fix preview and some improvements  [IacobIonut01]
+3151cbf  android.view: Speed things up!!  [Mazda]
+547f8bd  base: Adjustments to Android S clock  [CannedShroud]
+1f36f4a  base: AndroidSClock: Add margin  [CannedShroud]
+3652149  fixup! Add Android S Clocks  [TikkiTikki]
+7ce68d9  SystemUI: Adapt Shapeshift Clock to our layout  [Ayan Mukherjee]
+2f03e89  keyguard: Left align lock icon when required  [AshutoshSundresh]
+19920a9  keyguard: Introduce Android 12 ShapeShift clock  [mezzlasha]
+e6cf8cf  QSPanel: Improve code  [Jyotiraditya Panda]
+e025463  SystemUI: QSPanel: Misc code cleanup  [Adithya R]
+2dafa78  RGB Accenter: Link dark & light color to single string settings  [Genkzsz11]
+a74c0e27  base: Allow user to block individual apps from resuming  [Beth Thibodeau]
+afad1c0  base: Introduce RGB accenter 3.0 [1/2] [AgentFabulous - POSP] - Compared to v1 and v2 of accenter on older versions of android, other   than just build fixes, this implementation completely deprecates use   of props. Instead, we use settings. - When it comes to reading settings without proper contexts, early on in   the boot process, we may have no ContentProviders or ContentResolvers.   To address this, we simply try catch and bail as necessary, returning   the real resource. When things have been setup nicely by the zygote   setup, there will be no more exceptions and all relevant color   resources will be overriden as expected  [Kshitij Gupta]
+b5488e8  Camera2: Notify fps as Session Based Parameter  [Sauhard Pande]
+39e7dd9  SystemUI: FPS Info improvements  [Anushek Prasal]
+a2ed9ac  Add SystemSetting class analogous to SecureSetting  [Pranav Vashi]
+37b75d4  CarSystemUI: Exclude FODCircleViewImpl from UI components  [Al Sutton]
+dfcc7f8  VolumePanel: Drop aosp plugin [1/3]  [NurKeinNeid]
+ff5ea22  PrivacyChip: Do not change view on expand  [Pranav Vashi]
+8ba866b  MediaResume: Set it to 0 by default to avoid UI glitch [1/2]  [IacobIonut01]
+655c098  SystemUI: Remove unnecessary battery meter view impl in keyguard statusbar  [Pranav Vashi]
+f9db9cd  SystemUI: Fix NPE on Volume panel plugins  [ZeNiXxX]
+e04e313  SystemUI: Allow overlaying max system icons  [ZeNiXxX]
+0cd665d  RebootTile: Remember last mode  [ZeNiXxX]
+cbd169b  SystemUI: Extend reboot tile to add power off  [Pranav Vashi]
+d19eb2b  base: Improve FPS Info output formatting and performance  [Nauval Rizky]
+5df5f1e  base: Add FPS Info Overlay & Tile  [Marko Man]
+8a76975  SystemUI: Disable long click for CPU Info tile  [Pranav Vashi]
+495cb0e  SystemUI: Add CPUInfo toggle tile  [mydongistiny]
+b3ab55c  base: Add CPU info overlay  [maxwen]
+8456344  Revert "Cpu overlay: Add CPU info overlay [2/2]"  [Ayan Mukherjee]
+e1c73f2  base: SystemUI: add qs powershare tile  [Linux4]
+7ee3f96  SystemUI: Add anti flicker tile  [Arian]
+f00d798  SystemUI: Add Reboot/Recovery QS Tile  [fusionjack]
+e3fd8eb  SystemUI: Update clear-all notification button layout only when needed  [Nauval Rizky]
+491b3f3  data: Update permissions whitelist for PackageInstaller  [Jason Edson]
+9b763f7  SystemUI: Add time refresh capabilities for S clock controllers  [Joey Huab]
+4b24666  SystemUI: Add statusbar NFC icon  [xyyx]
+5953ebc  Drop the O_NOFOLLOW flag.  [Nicolas Geoffray]
+4741a99  settingslib: Tile: Add more checks if mMetaData is null.  [spezi77]
+3b96ec9  systemui: add alpha to the media icon  [El Dainosor]
+a395a36  SystemUI: Redesign Media Player View  [hpnightowl]
+9099c3a  SystemUI: Fine tune QS media layout and footer  [Adithya R]
+87700b8  systemui: make media widget respect notif app name style  [El Dainosor]
+c2c1e49  SystemUI: Adapt S Clocks to our layout  [Ayan Mukherjee]
+5ccd689  SystemUI: Refresh QS page indicator layout when number of pages changes  [Rituj Beniwal]
+b8ef3f5  base: Hide QS Footer page indicator [1/2]  [TikkiTikki]
+2ab9012  SystemUI: VolumeDialogImpl: Fix volume panel permanently visible  [programminghoch10]
+0f2591c  DataSwitchTile: Improve the code  [Ido Ben-Hur]
+bf95949  base: QS Header size customizations. [1/3]  [Maitreya29]
+2ff528a  Core: tweak some QQS dimens  [LordShenron]
+b55ae24  QSDetail: Fix QS detail panel with header image enabled  [Pranav Vashi]
+6d16881  QSCustomizer: Properly apply changes with header image enabled  [Pranav Vashi]
+59b6cf0  base: Add notification header and clear all gravity customizations [1/2]  [TikkiTikki]
+b94f7c0  QS header: Update and style edit strings  [Cruz]
+8fa4331  SystemUI: Convert global actions to translucent overlay with blur  [Danny Lin]
+2c3d65f  Power menu background opacity [1/2]  [Pranav Vashi]
+1e18144  Remove notification panel opacity from Power menu  [Pranav Vashi]
+787d81d  Set notification opacity for smart replies  [Pranav Vashi]
+7bfbbcd  Fix notification guts and header opacity  [Laker]
+fc758d2  Fix up notification opacity with animation  [Pranav Vashi]
+21ed5d6  Fix up alpha scale for notification image view  [Pranav Vashi]
+bbfaca4  base: Notifications background opacity [1/2]  [Laker]
+d9df344  QuickStatusBarHeader: Long-press header date to access calendar  [spezi77]
+90f0d41  QuickStatusBarHeader: Long-press header clock to access settings  [calebcabob]
+87f2bd9  base: QS status bar opacity [1/2]  [Pranav Vashi]
+0763c2a  Partially Revert "SystemUI: Remove black QS status bar background"  [Joey Huab]
+701e1aa  base: QS panel opacity [1/2]  [Nico60]
+6f60c68  base: Add qs status bar header image [1/2]  [Marko Man]
+f49579a  Restore "bypass lockscreen after face unlock" preference  [jhenrique09]
+257dde9  fixup - [1/2] Allow changing face unlock method when locked  [jhenrique09]
+8518bfe  [1/2] Allow changing face unlock method when locked  [jhenrique09]
+5a72cf1  Keyguard: Allow disabling fingerprint wake-and-unlock  [Steve Kondik]
+04ab626  SystemUI: SIM PIN1 lock screen abnormal  [sxia]
+c88ff5b  SystemUI: Don't enable detect-only fingerprint auth for FOD  [Dil3mm4]
+8e86fee  KeyguardUpdateMonitor: only allow biometric unlock with strong auth needed if decrypted  [daniml3]
+dbc07f2  base: Unlock keystore with fingerprint after reboot (1/2)  [xyyx]
+0cdd13b  SystemUI: use simple check for isFaceDisabled  [Ali B]
+0bd4b8e  SystemUI: Update keyguard indication margin when fod is in use  [Chris Crump]
+a3b4e7c  Introduce anti flicker mode in LiveDisplay  [Arian]
+d72b1b2  SystemUI: tiles: Open display settings on long clicks for livedisplay tiles  [Arian]
+9b10b88  SystemUI: Add reading mode tile  [Joey]
+f137d69  SystemUI: Add LiveDisplay tile  [Steve Kondik]
+f5c3046  base: Disable LiveDisplay low power consumption by default  [Anushek Prasal]
+15fcea9  Introduce LiveDisplay from Lineage  [Henrique Silva]
+e55d3ad  LineageHardwareService: Publish binder service during onStart()  [Bruno Martins]
+a2ef83a  Initial import of lineagehw  [jhenrique09]
+516d526  base: Add bool to enable/disable doze by default  [Pranav Vashi]
+5cab87a  PowerManager: Add proximity check on wake  [Bruno Martins]
+88104c8  SystemUI: Properly align owner info on Android S clocks  [NurKeinNeid]
+20a4958  layout: android-s-clock: remove drop shadows  [Chenyang Zhong]
+aae4e3c  AndroidSClockController: set clock text color based on wallpapers  [Chenyang Zhong]
+c2e0359  AndroidSClockController: fix NPE in setSlice  [Chenyang Zhong]
+0e5cb3b  AndroidSClockController: fix NPE in onAnimationUpdate  [Chenyang Zhong]
+d3442d4  AndroidSClockController: fix IndexOutOfBoundsException  [Chenyang Zhong]
+69276eb  Fix Android S clocks  [TikkiTikki]
+e8270c1  Add Android S Clocks  [TikkiTikki]
+6f7dd45f  Add support to Slice in ClockPlugin  [TikkiTikki]
+f358766  Add support to see if there are visible notifications in ClockPlugin  [TikkiTikki]
+0189e80  FODCircleView: Remove duplicated FLAG_WATCH_OUTSIDE_TOUCH  [Sebastiano Barezzi]
+7f04ed2  FODCircleView: Set dim behind fod base layer  [dataoutputstream]
+909656b  FODCircleView: Hide if fingerprint detection stops  [Pranav Vashi]
+89b173e  FODCircleView/FODAnimation: Clean ups and improvements  [neobuddy89]
+33028a2  FODCircleView: Improve position update  [Hikari-no-Tenshi]
+efcf3672  FODCircleView: Support kernel-based dimlayer  [Sebastiano Barezzi]
+9b7f775  FODCircleView: Restore DIM_BEHIND and dim amount to 0.0f on base view  [dataoutputstream]
+038b494  base: Permissions Fixes  [Surge Raval]
+94f828d  base: Grant suspend permission to Wellbeing  [Surge Raval]
+2b32e6f  SystemUI: Add flipendo to Battery Saver QSTile  [Jason Edson]
+fee9cdc  SystemUI: Replace QS Tile  Battery Saver Tile icons to MD2 Design  [deadmanxxd]
+4f2586e5  base: SystemUI: make the battery saver tile useful  [maxwen]
+00353c3  Revert "Remove BatteryDetail from BatterySaverTile"  [mosimchah]
+e0d1153  base: Grant suspend permission to Flipendo  [Adithya R]
+287961f  Keyguard: fix the mystery of disappearing battery percent  [Ali B]
+5934adc  SystemUI: BatteryMeter: Fix padding for % on left  [Adithya R]
+d70fa79  SystemUI: Unfuck battery percent padding  [Adithya R]
+72da797  SystemUI: Move percentage to left of battery  [Evan Laird]
+0153faf  Battery percentage: Improve hidden style  [spezi77]
+ada2384  base: Dont override aosp estimates  [ender1324]
+2a5915f  base: SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
+
+
+* manifest
+07dee9c  manifest: Track our repo of frameworks/libs/systemui  [Ayan Mukherjee]
+9e55831  manifest: Track OmniStyles from BlissRoms  [Jackeagle]
+
+
+* packages/apps/Blissify
+392c046  Blissify:Introduce RGB accenter 3.0 [2/2] -- base on PixelDust-Eleven/android_packages_apps_Themes@0088666#diff-c1ad049f74f3050973e09eb988619884ef3f371a0014e905c32f42594be210c1  [spezi77]
+bff940a  Blissify: Drop aosp volume plugin [2/3]  [NurKeinNeid]
+cf1895b  Blissify: Hide QS Footer page indicator [2/2]  [TikkiTikki]
+61ce8d9  Blissify: Add notification header and clear all gravity customizations [2/2]  [TikkiTikki]
+dd65c2b  Blissify: QS Header size customizations. [2/3]  [Maitreya29]
+d8ab894  Blissify: Power menu background opacity [2/2]  [Pranav Vashi]
+bbc606b  Blissify: Fixes for qs opacity  [Ayan Mukherjee]
+16478fe  Blissify: Notifications background opacity [2/2]  [Laker]
+36f7553  Blissify: QS status bar opacity [2/2]  [Pranav Vashi]
+06239c0  Blissify: QS panel opacity [2/2]  [Nico60]
+16d2bda  Blissify: Custom header image provider  [maxwen]
+9ce343e  Blissify: Add back qs header images [2/2]  [maxwen]
+
+
+* packages/apps/Plugins
+4c192c7  MiuiCompact Panel: Add alarm volume slider  [AshutoshSundresh]
+d0d74af  ShapeShiftPanel: Redesign output switcher UI  [MezzLasha]
+c060901  ShapeShiftPanel: Add alarm volume slider  [AshutoshSundresh]
+228ca19  {OosPanel, P404Panel}: Add missing style fallback  [NurKeinNeid]
+1b1091c  Plugins: Remove aosp style panel [3/3]  [NurKeinNeid]
+
+
+* packages/apps/Settings
+367a4f7  MediaResume: Set it to 0 by default to avoid UI glitch [2/2]  [IacobIonut01]
+0cb6252  Settings: Make media player allowed list dependent on toggle  [Adithya R]
+7d79f19  Settings: Allow user to block individual apps from resuming  [Beth Thibodeau]
+06b7a7e  Settings: Show avatar on search bar in all it's glory  [George Zacharia]
+36d30de  Settings: Add back DataUsageSlice  [Anushek Prasal]
+416da15  Settings: Update preference videos  [Anushek Prasal]
+8181401  Device picker: add title to fix offset in progressbar  [Timi]
+acb6bf7  3fingerswipe: add vectors  [Dil3mm4]
+14c5985  Hide 'unlock keystore with fingerprint' settings if the device is encrypted  [daniml3]
+3b5b76c  Inline fingerprint unlock keystore switch into lockscreen fragment [2/2]  [ganeshi4u]
+f0e7043  Settings: One does not simply become a Developer  [Chirayu Desai]
+e141f24  Settings: AppLock: Improve strings  [jhenrique09]
+40f66a6  Restore "bypass lockscreen after face unlock" preference  [jhenrique09]
+72a5e7f  [2/2] Allow changing face unlock method when locked  [jhenrique09]
+5787d1c  Settings: Switch applock timeout to DropDownPreference  [Adithya R]
+7a0863f  Settings: Improve haptic feedback toggle summary  [Adithya R]
+0a97f37  LiveDisplaySettings: Unlock Reading Mode whenever is possible  [Bruno Martins]
+3835e26  LiveDisplay: Add color mode preview from AOSP Settings  [LuK1337]
+85a90ba  Settings: Use seekbar to allow setting arbitrary animation values  [Steve Kondik]
+509e4a5  Settings: Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
+bc447c9  Settings: Changes for LiveDisplay  [Henrique Silva]
+64db62b  Settings: Add permissions for lineagehw  [jhenrique09]
+
+
+* prebuilts/gcc/linux-x86/aarch64/arm64-gcc10.3.1
+38a5a6d  Import ARM64 GCC 20210805  [Reinazhard]
+
+
+* prebuilts/gcc/linux-x86/aarch64/arm64-gcc11
+c352c36  Import ARM64 GCC 20210805  [Reinazhard]
+
+
+* vendor/bliss
+97d00f8  versions: Bump to v14.6 Release  [Jackeagle]
+8b7b1bf  build: set build fingerprint for all devices  [Volodymyr Zhdanov]
+da94c6d  bliss: Build OmniStyle  [Jackeagle]
+4a95d78  bliss: Include livedisplay permissions  [Sam Mortimer]
+00eb977  vendor: Prebuilt flipendo  [Ayan Mukherjee]
 
 ====================
      08-04-2021
 ====================
 
-
-   * frameworks/opt/telephony
-e3d255b77 Merge tag 'android-11.0.0_r40' into staging/lineage-18.1_merge-android-11.0.0_r40
-
-   * packages/services/Telephony
-e99230b00 Add intent-filter priority for CONFIGURE_VOICEMAIL intent.
-
-   * platform_manifest
-afa30c1 manifest: merge tag 'android-11.0.0_r40' into r11.1
-4983fce manifest: Track system HIDL tools.
+* packages/apps/Launcher3
+2147e52  Bring back screenshot button visibility  [Ayan Mukherjee]
+6a21fbb  Launcher3: Add Missing privapp permission whitelists  [Ayan Mukherjee]
+7633ef0  Remove licenses  [Ayan Mukherjee]
+2eef90d  Add back button to Settings  [Alex Cruz]
+301b8a7  Launcher3: Restore blur depth on configuration change  [Rituj Beniwal]
+ed76894  ParanoidLauncher: Fix BLUR not being applied properly in some cases  [Rituj Beniwal]
+e860660  [Proton-AOSP] ParanoidLauncher: Don't apply blur in normal state.  [Adithya R]
+47e1cf3  overlay: Define blur radius in device-independent pixels  [Danny Lin]
+26ce676  DepthController: Change blur radius to dimension resource  [Danny Lin]
+e8fd293  Add ripple to overview actions  [mezzlasha]
+0d1f80e  Launcher3: CustomSeekbarPreference: Add haptic feedback to actions  [Anushek Prasal]
+ebab1b3  Launcher3: remove extra space for hotseat  [maxwen]
+653fb4d  Launcher3: restart Launcher on changing font size  [Omkar Chandorkar]
+24a1257  Launcher3: Delink font size settings  [Pranav Vashi]
+cb9bd84  Launcher3: Use custom seekbar for icon size  [Pranav Vashi]
+6021a5b  Launcher3: Add option to change icon size  [hundeva]
+4b22067  Simplify `GestureListener`  [Patryk Michalik]
+ac176e1  Use existing StatusBarTouchController to handle swipe down  [Suphon Thanakornpakapong]
+01c644f  Launcher3: Swipe down on Workspace to expand statusbar  [Kshitij Gupta]
+39dbb81  Launcher3: Fix colors on light style  [Pranav Vashi]
+9e3a103  Launcher3: Add back buttons in settings  [Jyotiraditya]
+915d8db  Launcher3: Remove broken notif gesture toggle  [AshutoshSundresh]
+de807a2  SystemShortcuts: fix fc with InfoBottomSheet  [Ali B]
+dee9f56  Launcher3: Apply haptic effect to switches  [Anushek Prasal]
+521fdb1  Launcher3: Properly sort out all custom settings  [Alex Cruz]
 
 ====================
      08-03-2021
 ====================
 
+* build/make
+878c417  Merge tag 'android-11.0.0_r40' of https://android.googlesource.com/platform/build into r  [SahilSonar]
 
-   * external/hosts
-f929591b Release 3.8.5
-20ce5dab Updates from yoyo.org, ULRHaus, someonewhocares.org, shady-hosts, digitalside.it, KADhosts, hostsVN, Adguard, and AdAway.
-392fddc9 Issue #1722: fix — add LemonDuck and LemonCat domains.
+
+* frameworks/base
+f8f2cf6  Merge tag 'android-11.0.0_r40' of https://android.googlesource.com/platform/frameworks/base into r  [SahilSonar]
+
+
+* frameworks/opt/telephony
+bcfbe86  Merge tag 'android-11.0.0_r40' of https://android.googlesource.com/platform/frameworks/opt/telephony into r  [SahilSonar]
+
+
+* manifest
+f5907aa  Merge tag 'android-11.0.0_r40' of https://android.googlesource.com/platform/manifest into r  [SahilSonar]
+1fed4b4  Manifest for Android 11.0.0 Release 40 (RQ3A.210805.001.A1)  [The Android Open Source Project]
+
+
+* packages/apps/Settings
+58ecd60  Merge tag 'android-11.0.0_r40' of https://android.googlesource.com/platform//packages/apps/Settings into r  [SahilSonar]
+
+
+* packages/services/Telephony
+7030dd1  Merge tag 'android-11.0.0_r40' of https://android.googlesource.com/platform/packages/services/Telephony into r  [SahilSonar]
 
 ====================
      08-02-2021
 ====================
-
-
-   * system/tools/hidl
-44f4d6a8 prebuilt_hidl_interfaces
-cfffcdce hidl_metadata_test
-
 ====================
      08-01-2021
 ====================
 
+* prebuilts/gcc/linux-x86/aarch64/arm64-gcc10.3.1
+8b8404f  Import ARM64 GCC 20210801  [Reinazhard]
 
-   * prebuilts/gcc/linux-x86/aarch64/arm64-gcc10.3.1
-8b8404f Import ARM64 GCC 20210801
+
+* prebuilts/gcc/linux-x86/aarch64/arm64-gcc11
+aef9b0e  Import ARM64 GCC 20210801  [Reinazhard]
 
 ====================
      07-31-2021
 ====================
-
-
 ====================
      07-30-2021
 ====================
+====================
+     07-29-2021
+====================
+
+* prebuilts/gcc/linux-x86/aarch64/arm64-gcc10.3.1
+92e5135  Import ARM64 GCC 20210729  [Reinazhard]
+148582c  Import ARM64 GCC 20210729  [Reinazhard]
 
 
-   * external/hosts
-9d650854 Fix comment in my ad-hoc hosts list.
-16f297b9 Gentle edits to the readme template.
-47a4b233 Release 3.8.4
-9435305e Updates from yoyo.org, URLHaus, digitalside.it, orca.pet, KADhosts, hostsVN, and Adaway.
-22cb856d Issue #1721: add new domains from Bitdefender.
+* prebuilts/gcc/linux-x86/aarch64/arm64-gcc11
+39323f5  Import ARM64 GCC 20210729  [Reinazhard]
+55c77c5  Import ARM64 GCC 20210729  [Reinazhard]
 
-   * frameworks/base
-6173a853a95 Merge "Revert "InputManagerService: Flag when an injected event is a real input"" into r11.1
-b8ee696dd67 Revert "InputManagerService: Flag when an injected event is a real input"
-be66a8c61b6 Revert "fixup! InputManagerService: Flag when an injected event is a real input"
-
-   * frameworks/native
-0e7afc827 Revert "Use the original device ID when the injected event is unchanged"
-
-   * prebuilts/gcc/linux-x86/aarch64/arm64-gcc10.3.1
-92e5135 Import ARM64 GCC 20210729
-
+====================
+     07-28-2021
+====================
+====================
+     07-27-2021
+====================
+====================
+     07-26-2021
+====================
